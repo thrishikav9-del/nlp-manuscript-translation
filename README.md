@@ -1,115 +1,171 @@
 # NLP Manuscript Translation
 
-**AI-Powered Manuscript Translation and Digital Preservation Using Cloud Computing and DBMS**
+**Digital Manuscript Preservation and Translation Platform Using NLP, Cloud Computing, and MySQL**
 
-NLP Manuscript Translation is an intelligent platform designed to digitize, organize, and translate historical manuscripts through the integration of Natural Language Processing (NLP), Cloud Computing, and Database Management Systems (DBMS). The system provides a unified environment for manuscript storage, retrieval, preservation, and automated translation, improving accessibility to valuable cultural and historical documents.
+NLP Manuscript Translation is a software platform designed to support the digitization, organization, preservation, and translation of historical manuscripts.
 
-Unlike conventional approaches that handle storage and translation separately, the platform combines cloud-based storage, structured database management, and NLP-driven translation into a single scalable solution.
+The project combines **Natural Language Processing (NLP), database management, and cloud-based storage concepts** to create a unified workflow for managing digitized manuscripts and their translated content.
 
 ---
 
 ## Overview
 
-Historical manuscripts contain valuable cultural, scientific, and linguistic knowledge, yet many remain inaccessible due to language barriers, physical deterioration, and fragmented storage systems. Traditional translation methods require significant manual effort and expertise, while existing digital solutions often lack integration between storage, organization, and translation.
+Historical manuscripts contain valuable cultural, linguistic, scientific, and historical information, but access to these resources can be limited by physical deterioration, language barriers, and fragmented information management.
 
-This project addresses these challenges by developing a unified platform that leverages Cloud Computing for secure storage, MySQL DBMS for efficient manuscript organization, and Natural Language Processing for automated translation. The framework aims to preserve historical documents while improving accessibility for researchers, students, and cultural institutions.
+NLP Manuscript Translation explores a unified approach in which digitized manuscript resources can be:
+
+```text
+Stored
+  ↓
+Organized
+  ↓
+Retrieved
+  ↓
+Processed
+  ↓
+Translated
+  ↓
+Preserved
+```
+
+The platform brings manuscript management and NLP-based translation into a common workflow intended for academic and cultural-preservation applications.
 
 ---
 
-## Key Features
+## Key Capabilities
 
-- Cloud-based manuscript storage
-- Structured manuscript organization using MySQL
-- NLP-based manuscript translation
-- Digital preservation of historical documents
-- Efficient search and retrieval
-- Scalable database architecture
-- Modular system design for future expansion
+- Digital manuscript storage and management
+- Structured manuscript metadata management
+- NLP-based text translation
+- Manuscript categorization and organization
+- Search and retrieval
+- Resource management
+- Digital preservation workflows
+- Database-backed information management
+- Modular architecture for future NLP and cloud extensions
 
 ---
 
 ## System Architecture
 
 ```text
-            Physical Manuscripts
-                     │
-                     ▼
-          Digitization & Upload
-                     │
-                     ▼
-             Cloud Storage
-                     │
-                     ▼
-          MySQL Database Management
-                     │
-                     ▼
-        Manuscript Organization
-                     │
-                     ▼
-     Natural Language Processing
-                     │
-                     ▼
-      Automated Translation Engine
-                     │
-                     ▼
-      Unified Access & Retrieval
+                    Digital Manuscript
+                           |
+                           v
+                   Digitization / Upload
+                           |
+                           v
+                     Cloud Storage
+                           |
+                           v
+                 Database Management
+                           |
+                           v
+                  Manuscript Metadata
+                           |
+                           v
+                 NLP Processing Layer
+                           |
+                           v
+                  Translation Engine
+                           |
+                           v
+                 Translated Manuscript
+                           |
+                           v
+                  Search & Retrieval
 ```
 
 ---
 
 ## Core Components
 
-### Cloud Storage
+### 1. Manuscript Management
 
-The platform stores digitized manuscripts securely in cloud storage, enabling centralized access, scalability, and long-term preservation.
+The platform provides a structured workflow for managing digitized manuscript resources.
+
+The system can organize information such as:
+
+- Manuscript metadata
+- Categories
+- Topics
+- Preservation information
+- Resource information
+- Access-related information
 
 ---
 
-### Database Management
+### 2. Database Management
 
-MySQL is used to organize manuscript metadata, categories, topics, and resource allocation through a structured relational database.
+A relational database is used to organize manuscript-related information.
 
-The database supports:
+The database architecture supports:
 
 - Manuscript cataloging
-- Topic management
 - Metadata storage
+- Topic management
 - Resource tracking
-- Efficient retrieval
+- Structured retrieval
+
+The project uses **MySQL** as the database technology.
 
 ---
 
-### Natural Language Processing
+### 3. Natural Language Processing
 
-The NLP module automates manuscript translation by processing digitized text and generating translated content.
+The NLP component processes digitized manuscript text and supports automated translation.
 
-The framework is designed to support future integration of advanced language models and multilingual translation techniques.
-
----
-
-### Information Management
-
-The system manages manuscript information, preservation records, departmental allocation, and access control to maintain organized digital archives.
+The translation workflow is designed to transform manuscript content into accessible translated text while providing a foundation for future multilingual NLP extensions.
 
 ---
 
-### Resource Management
+### 4. Cloud Storage
 
-Resources such as translators, funding, and supporting departments are managed through dedicated database modules to improve coordination and workflow efficiency.
+Cloud storage concepts are incorporated to support centralized storage and scalable access to digitized manuscript resources.
+
+The architecture separates manuscript storage from structured metadata management, allowing the platform to be extended toward larger digital archives.
+
+---
+
+### 5. Information Management
+
+The system organizes manuscript-related information including:
+
+- Manuscript records
+- Preservation information
+- Departmental allocation
+- Resource information
+- Access management
+
+This provides a structured approach to managing digital archival resources.
+
+---
+
+### 6. Resource Management
+
+The platform also considers supporting resources involved in manuscript preservation and translation, including:
+
+- Translators
+- Funding
+- Supporting departments
+- Related resources
+
+This provides an additional organizational layer for manuscript-management workflows.
 
 ---
 
 ## Technology Stack
 
 | Category | Technology |
-|-----------|------------|
+|---|---|
 | Programming Language | Python |
+| Web Interface | HTML |
 | Database | MySQL |
-| Cloud Platform | Cloud Storage |
-| Artificial Intelligence | Natural Language Processing (NLP) |
+| Artificial Intelligence | Natural Language Processing |
+| Cloud Architecture | Cloud Storage |
 | Database Design | ER Modeling |
 | Software Design | UML |
-| Development Tools | MySQL Workbench |
+| Database Tool | MySQL Workbench |
 
 ---
 
@@ -118,11 +174,19 @@ Resources such as translators, funding, and supporting departments are managed t
 ```text
 nlp-manuscript-translation/
 │
-├── database/
-├── cloud/
-├── nlp/
-├── diagrams/
-├── docs/
+├── app.py              # Main application
+├── index.html          # Main interface
+├── login.html          # Login interface
+├── manuscripts.db      # Local database
+├── 2.pdf               # Manuscript / project resource
+├── 3.pdf               # Manuscript / project resource
+├── 4.pdf               # Manuscript / project resource
+├── 5.pdf               # Manuscript / project resource
+├── 6.pdf               # Manuscript / project resource
+├── 7.pdf               # Manuscript / project resource
+├── 8.pdf               # Manuscript / project resource
+├── requirements.txt    # Python dependencies
+├── runtime.txt         # Runtime configuration
 ├── README.md
 ├── LICENSE
 └── .gitignore
@@ -132,82 +196,152 @@ nlp-manuscript-translation/
 
 ## Methodology
 
-The platform follows the workflow below:
+The platform follows a structured manuscript-processing workflow:
 
-1. Digitize physical manuscripts.
-2. Upload manuscripts to cloud storage.
-3. Organize manuscript information using MySQL.
-4. Categorize manuscripts through structured database design.
-5. Apply NLP techniques for automated translation.
-6. Store translated manuscripts for efficient retrieval.
-7. Provide a unified platform for access and management.
+```text
+1. Digitize manuscript resources
+              ↓
+2. Upload and store digital resources
+              ↓
+3. Register manuscript metadata
+              ↓
+4. Organize manuscripts using database structures
+              ↓
+5. Process digitized text using NLP
+              ↓
+6. Generate translated content
+              ↓
+7. Store and organize translated information
+              ↓
+8. Retrieve manuscript resources when required
+```
+
+---
+
+## Database and Information Flow
+
+The information-management workflow can be represented as:
+
+```text
+Manuscript
+    |
+    +---- Metadata
+    |
+    +---- Category
+    |
+    +---- Topic
+    |
+    +---- Preservation Information
+    |
+    +---- Resource Information
+    |
+    +---- Translation
+    |
+    v
+Structured Database
+    |
+    v
+Search / Retrieval
+```
 
 ---
 
 ## Applications
 
-- Digital Libraries
-- Cultural Heritage Preservation
-- Historical Document Translation
-- Academic Research
-- Museum Archives
-- Educational Resources
+The platform can support research and experimentation in:
+
+- Digital libraries
+- Cultural heritage preservation
+- Historical document management
+- Manuscript translation
+- Academic research
+- Museum archives
+- Educational resources
+- Digital archival systems
 
 ---
 
 ## Advantages
 
-- Unified cloud and database architecture
-- Improved manuscript preservation
-- Automated translation support
-- Efficient manuscript organization
-- Scalable system design
-- Enhanced accessibility for researchers
+- Combines manuscript management and NLP workflows
+- Provides structured digital-resource organization
+- Supports database-backed manuscript retrieval
+- Provides a foundation for automated translation
+- Separates storage, metadata, and processing concerns
+- Can be extended toward larger digital-preservation systems
 
 ---
 
 ## Limitations
 
-- Translation quality depends on NLP model performance
-- Ancient and regional languages remain challenging
-- Requires high-quality digitized manuscript data
-- Cloud deployment depends on infrastructure availability
+- Translation quality depends on the underlying NLP approach
+- Historical and regional languages can present significant linguistic challenges
+- Translation requires sufficiently clean digitized text
+- OCR may be required for handwritten or scanned manuscripts
+- Cloud functionality depends on the configured infrastructure
+- The current project is an academic prototype rather than a production archival system
 
 ---
 
 ## Future Enhancements
 
-- Advanced transformer-based NLP models
-- Support for multiple regional languages
-- Intelligent semantic search
-- OCR integration for handwritten manuscripts
+Potential extensions include:
+
+- Transformer-based multilingual translation
+- Support for additional regional and historical languages
+- OCR for scanned and handwritten manuscripts
+- Semantic search across manuscript collections
+- Advanced manuscript classification
 - Cloud deployment on AWS, Azure, or Google Cloud
-- Research collaboration portal
+- Research collaboration features
+- Digital-archive visualization
+- Improved access-control mechanisms
+
+---
+
+## Research Perspective
+
+The project explores the intersection of:
+
+```text
+Digital Preservation
+        +
+Natural Language Processing
+        +
+Database Systems
+        +
+Cloud Computing
+        +
+Cultural Heritage
+```
+
+The goal is to explore how these technologies can work together to improve the organization, accessibility, and preservation of historical textual resources.
 
 ---
 
 ## Documentation
 
-Project documentation and presentation are included in the repository.
+Project documentation and presentation materials are included in the repository.
 
 ---
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
 ## Disclaimer
 
-This project was developed for academic and research purposes to demonstrate the integration of Cloud Computing, Database Management Systems, and Natural Language Processing for manuscript preservation and translation.
+This project was developed for academic and research purposes to demonstrate the integration of Natural Language Processing, database management, cloud-computing concepts, and digital manuscript preservation.
+
+The system is a research/academic prototype and does not represent a production archival or professional translation service.
 
 ---
 
 ## Author
 
-**Thrishika**
+**Vullasa Thrishika**
 
-B.Tech Computer Science and Engineering (Artificial Intelligence)
-
+B.Tech Artificial Intelligence  
 Amrita Vishwa Vidyapeetham
